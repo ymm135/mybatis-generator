@@ -1,27 +1,3 @@
-# mybatis-generator
-mybatis生成器
-> 使用时请删除自动生成文件夹:`com.yangmm.mapper`, `com.yangmm.pojo`, `src/main/resources/mapper` 
-> 为了方便查看效果而保留。
-
-# 修改配置generatorConfig.xml  
-- 修改数据库连接 
-```
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/my-database"
-                        userId="root"
-                        password="root">
-        </jdbcConnection>
-``` 
-
-- 修改导出的表格 
-```
-<!-- 数据库表 -->
-<table tableName="users"></table> 
-...
-```
-
-- 测试表格的表结构
-```
 -- ----------------------------
 -- Table structure for users
 -- ----------------------------
@@ -41,5 +17,3 @@ CREATE TABLE `users` (
   `updated_time` datetime NOT NULL COMMENT '更新时间 更新时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户表 ';
-``` 
-
